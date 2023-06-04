@@ -1,6 +1,10 @@
 .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /*position: fixed로 인해 배열이 깨지는 경우, 부모(body)의 너비를 다 받는다*/
     background-color: #f9f9fa;
-    padding: 20px 30px;
+    padding: 20px 35px;
+    box-sizing: border-box; /* box의 크기를 유지한 채 padding을 할당, 화면 밖에 나간 아이콘들이 한줄에 보이게 수정*/
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 .nav__list {
@@ -9,7 +13,33 @@
 }
 .nav__btn {
     list-style-type: none;
+    position: relative;
 }
 .nav__link {
     color: #2e363e;
+    position: relative;
+}
+
+.nav__notification {
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    position: absolute;
+    right: -13px;
+    top: -18px;
+}
+.nav__alim {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
 }
