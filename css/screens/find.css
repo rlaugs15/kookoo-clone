@@ -1,0 +1,123 @@
+.find-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.find-icons-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.find-icons-icon i {
+    font-size: 35px;
+}
+
+.find-icons-icon span {
+    margin-top: 18px;
+}
+
+.recommended-friends {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    padding: 25px 0px;
+    margin: 25px 0px;
+}
+
+.recommended-friends__title {
+    font-size: 12px;
+    color: var(--font-color);
+}
+
+.recommended-friends span {
+    margin: 100px 0px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: var(--font-color);
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.open-chat__header h4 {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: var(--horizontal-space);
+}
+
+.open-chat__header span {
+    color: var(--font-color);
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-weight: 600;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.open-post__hashtags {
+    text-transform: capitalize;
+    opacity: 0.5;
+}
+
+.open-post__actor {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.open-post__actor img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-post__main-actor {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.open-post__actor .divider {
+    width: 1px;
+    height: 15px;
+    margin: 0px 5px;
+    background-color: var(--font-color);
+}
+
+.open-post__main-actor__name {
+    color: blueviolet;
+    text-transform: capitalize;
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+.open-post__heart-count {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute; /*position의 특징 중 하나가 적용된 요소의 크기는 내용의 크기만큼 자동으로 인지되므로 박스가 작아진다*/
+    bottom: 10px;
+    right: 10px;
+}
+
+.open-post__heart-count span {
+    margin-left: 3px;
+}

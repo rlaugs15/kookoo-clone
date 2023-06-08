@@ -25,12 +25,3 @@
     right: -13px;
     top: -18px;
 }
-.nav__alim {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: tomato;
-    border-radius: 50%;
-    position: absolute;
-    right: -3px;
-}
