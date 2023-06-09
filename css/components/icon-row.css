@@ -1,0 +1,25 @@
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.icon-row-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%; /*.icon-row에 flex-wrap: wrap;을 추가한 다음 한 줄에 4개의 아이콘이 표시되도록 각 아이콘의 너비를 25%로 설정 */
+    margin-bottom: 35px;
+    position: relative;
+}
+.more-point {
+    right: 30px;
+}
+.icon-row-icon i {
+    font-size: 35px;
+}
+
+.icon-row-icon span {
+    margin-top: 18px;
+    text-align: center;
+}
