@@ -1,0 +1,41 @@
+.alt-header {
+    padding: var(--horizontal-space);
+    padding-top: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alt-header__title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.alt-header__column:first-child {
+    margin-right: auto;
+}
+.alt-header__column:last-child {
+    margin-left: auto;
+} /*여기까지 settings.html*/
+
+/* 위 코드와 아래 코드의 차이점은 space-between이 글자 수에 따라서 배열이 중앙 정렬이 안되지만
+auto를 쓰면 글자 수와 무관하게 중앙 정렬이 됨 
+.alt-header{
+padding:var(--horizontal-space);
+padding-top: 40px;
+margin-bottom: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.alt-header__title {
+font-size: 32px;
+font-weight: 600;
+}
+*/
+
+.alt-header__column span:first-child {
+    margin-right: 15px;
+} /*chat.html에서의 돋보기와 삼단바 사이의 거리를 조절하기 위함*/
