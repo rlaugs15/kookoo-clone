@@ -6,4 +6,4 @@
     position: absolute;
     right: -6px;
     top: -7px;
-    }
+    } /*point가 필요한 아이콘이 들어있는 태그에 <div class="point"></div>를 아이콘 태그 위에 작성할 것*/

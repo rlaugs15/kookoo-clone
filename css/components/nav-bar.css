@@ -4,7 +4,7 @@
     width: 100%; /*position: fixed로 인해 배열이 깨지는 경우, 부모(body)의 너비를 다 받는다*/
     background-color: #f9f9fa;
     padding: 20px 35px;
-    box-sizing: border-box; /* box의 크기를 유지한 채 padding을 할당, 화면 밖에 나간 아이콘들이 한줄에 보이게 수정*/
+    box-sizing: border-box; /* 콘텐츠와 패딩, 테두리의 크기가 요소의 실제 크기에 포함되므로 box의 크기를 유지한 채 padding을 할당, 화면 밖에 나간 아이콘들이 한줄에 보이게 수정*/
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 .nav__list {
