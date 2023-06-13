@@ -1,6 +1,6 @@
 .chat-screen {
     background-color: lightseagreen;
-    height: 10000vh;
+    height: 300vh;
 }
 
 
@@ -18,6 +18,16 @@
     z-index: 2;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
 
 .main-chat {
     padding: 0 15px;
@@ -25,6 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.3s linear;
 }
 
 .chat__timestamp {
@@ -102,8 +113,9 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 25px;
-    box-sizing: border-box;
     align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -118,12 +130,13 @@
     height: 30px;
     border:var(--main-border);
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i, /*last-child i는 버튼 안의 아이콘까지 선택하므로 child를 다이렉트로 선택*/
 .reply__column:last-child button {
     position: absolute;
-    right: 3px;
+    right: -3px;
     top: 2px;
 }
 
@@ -152,3 +165,45 @@
 .reply__column button:active {
     outline: none;
 }
+
+.reply input::placeholder {
+    padding: 15px;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button {
+    transition: opacity 0.1s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button { /*focus-within = reply form 내부의 어떤 속성이 focus가 되면 */
+    opacity: 0; /*전체화면에서 화면이 망가실 시 => display:none; */
+}
+
+.reply input:focus {
+    width: 98vw;
+    transform: translateX(-13%) translateY(-80px);
+    /*box-sizing: border-box; 추가했다 지우니 스마일과 화살표 패딩이 이상해짐*/
+}
+
+.reply:focus-within {
+    transform: translateY(80px);
+}
+
+
+@keyframes imgBeat {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: none;
+    }
+}    
+.message-row img {
+    animation: imgBeat 1s ease-in-out;
+    }
